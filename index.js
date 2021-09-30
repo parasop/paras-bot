@@ -7,7 +7,7 @@ const client = new Client({
 
 //----TOP.GG-----------------
 const Topgg = require("@top-gg/sdk")
-client.topgg = new Topgg.Api("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcxMjMwMjAwMzY2NTI0MDEwNiIsImJvdCI6dHJ1ZSwiaWF0IjoxNjE5NTEwMjMyfQ.qcPtVqjhQqXxXK1vhjuhEIdxhA5eESzEa4TK1LNLOGo")
+client.topgg = new Topgg.Api("TOPGG KEY")
 
 
 const AutoPoster = require('topgg-autoposter')
@@ -27,7 +27,7 @@ client.db = new Database(
   "mongodb+srv://PARAS-BOT:6P0Ay5rFKFy9LZvX@paras-bot.junpi.mongodb.net/parasop?retryWrites{}=true&w=majority"
 );
 const mongoose = require("mongoose")
-mongoose.connect("mongodb+srv://PARAS-BOT:6P0Ay5rFKFy9LZvX@paras-bot.junpi.mongodb.net/parasop?retryWrites=true&w=majority", {
+mongoose.connect("TOPGG KEY", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   }).then(() => {
@@ -38,7 +38,7 @@ console.log("[DB] Connected to the Mongodb database.", "log");
 
 //#-----IMAGE MANUPALING------
 const AmeClient = require("amethyste-api")
-const AMEAPI = `b238fbefaf846470dfe4409e40d5092450f0071d93a14df3c15209c3fef88916dbdfab1cce309a161f6b0ed5718a6845780e5425e42c64dee88f7d41caa0f01a`;
+const AMEAPI = `AME API`;
 client.AmeAPI = new AmeClient(AMEAPI);
 
 
