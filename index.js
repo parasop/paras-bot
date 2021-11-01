@@ -24,7 +24,7 @@ ap.on('posted', () => {
 //-------DATABASE---------------
 const { Database } = require("quickmongo");
 client.db = new Database(
-  "mongodb+srv://PARAS-BOT:6P0Ay5rFKFy9LZvX@paras-bot.junpi.mongodb.net/parasop?retryWrites{}=true&w=majority"
+  ""
 );
 const mongoose = require("mongoose")
 mongoose.connect("TOPGG KEY", {
